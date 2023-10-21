@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimaryDark">
+
+    <LinearLayout
+        android:layout_width="392dp"
+        android:layout_height="69dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="1dp"
+        android:layout_marginEnd="6dp"
+        android:layout_marginRight="6dp"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="58dp"
+            android:layout_height="match_parent">
+
+            <com.example.empleo0001.CircleImageView
+                android:id="@+id/image_circle"
+                android:layout_width="55dp"
+                android:layout_height="55dp"
+                android:layout_marginTop="9dp"
+                android:descendantFocusability="blocksDescendants"
+                android:clickable="true"
+                android:src="@drawable/mari" />
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="263dp"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/puesto"
+                android:layout_width="match_parent"
+                android:layout_height="19dp"
+                android:layout_above="@+id/contenido"
+                android:layout_gravity="center"
+                android:layout_marginBottom="5dp"
+                android:layout_weight="1"
+                android:text="Puesto"
+                android:textColor="#000000"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/contenido"
+                android:layout_width="match_parent"
+                android:layout_height="39dp"
+                android:layout_alignParentBottom="true"
+                android:layout_gravity="center"
+                android:layout_marginBottom="1dp"
+                android:layout_weight="1"
+                android:text="descripccion"
+                android:textColor="#000000"
+                android:descendantFocusability="blocksDescendants"
+                android:focusable="true"
+                android:clickable="true"
+                />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="600dp"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/fech_p"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_weight="0"
+                android:text="fecha_p" />
+        </LinearLayout>
+
+    </LinearLayout>
+</RelativeLayout>
+
